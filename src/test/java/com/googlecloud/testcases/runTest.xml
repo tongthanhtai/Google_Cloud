@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example">
+    <parameter name="browserType" value="edge" />
+    <parameter name="appURL"
+               value="https://cloud.google.com/?hl=en" />
+
+    <test name="sample test">
+        <classes>
+            <class name="com.googlecloud.testcases.CloudTest">
+                <methods>
+                    <include name="openCloudPage" />
+                    <include name="showOverview" />
+                    <include name="showSolutions" />
+                    <include name="showProducts" />
+                    <include name="clickRequestDemo" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
